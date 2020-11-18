@@ -3,6 +3,59 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 50px 0 55px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__item + .menu__item {
+    margin-left: 35px;
+  }
+  &__link {
+    color: $header-color;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 12px;
+  }
+}
+
+.user__nav {
+  display: flex;
+  &__link {
+
+  }
+  &-link--search {
+    background-image: url(../images/icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #edf1f4;
+    padding: 17px 18px;
+    border-radius: 50%;
+  }
+  &
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
