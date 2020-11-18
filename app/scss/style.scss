@@ -5,9 +5,28 @@
 
 .header {
   padding: 50px 0 55px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__title {
+    @extend %dmsans-500;
+    font-size: 36px;
+    line-height: 58px;
+    color: $header-color;
   }
 }
 
@@ -15,31 +34,93 @@
   &__list {
     display: flex;
   }
-  &__item + .menu__item {
+
+  &__item+.menu__item {
     margin-left: 35px;
   }
+
   &__link {
     color: $header-color;
-    text-decoration: none;
     font-size: 15px;
     line-height: 12px;
+    @extend %rubik-500;
   }
 }
 
 .user__nav {
   display: flex;
-  &__link {
+  align-items: center;
 
-  }
+  &__link {}
+
   &-link--search {
-    background-image: url(../images/icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #edf1f4;
-    padding: 17px 18px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    margin-right: 21px;
+    padding: 17px 0;
   }
-  &
+
+  &-bar {
+    background-color: #fcd7b6;
+    height: 50px;
+    width: 170px;
+    border-radius: 50px 50px;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &-bar::before {
+    content: '';
+    background-color: #fde7d3;
+    width: 1px;
+    height: 32px;
+    position: absolute;
+    top: 9px;
+    left: 85px;
+  }
+
+  &-link--menu {
+    background-color: #a3bbc8;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    padding: 13px 0;
+  }
+
+  &-link--heart {
+    margin-right: 61px;
+    position: relative;
+  }
+
+  &-link--basket {
+    position: relative;
+  }
+
+  &-num {
+    position: absolute;
+    top: -7px;
+    left: 12px;
+    background-color: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    text-align: center;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 16px;
+    color: $header-color;
+  }
+
+  &-image {
+    margin: 0 auto;
+  }
 }
 
 
@@ -62,5 +143,3 @@
 
 
 @import 'media';
-
-
