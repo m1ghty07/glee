@@ -1,0 +1,36 @@
+.service {
+  margin-bottom: 75px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    background-color: #fef7f0;
+    padding: 45px 0 65px;
+     &+& {
+       border-left: 1px solid #e8e4df;
+     }
+  }
+
+  &__info {
+    margin-left: 30px;
+  }
+
+  &__info-title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: #414141;
+    margin-bottom: 15px;
+  }
+
+  &__info-text {
+    @extend %dmsans-400;
+    line-height: 1.5;
+    color: #585858;
+    max-width: 215px;
+  }
+}

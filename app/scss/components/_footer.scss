@@ -1,0 +1,143 @@
+.footer {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__top-connection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__top-connection a {
+    max-width: 200px;
+    color: $footer-color;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+
+  &__top-item {
+    margin-bottom: 20px;
+  }
+
+  &__top-title {
+    color: #1f2044;
+    @extend %dmsans-700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    text-transform: uppercase;
+  }
+
+  &__top-link {
+    font-size: 14px;
+    @extend %rubik-400;
+    line-height: 1;
+    color: $footer-color;
+
+    &:hover {
+      @extend %rubik-500;
+    }
+  }
+
+  &__top-info {
+    max-width: 240px;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: $footer-color;
+    margin-bottom: 50px;
+  }
+
+  &__top-form {
+    display: flex;
+    position: relative;
+    label {
+      color: #234969;
+      @extend %dmsans-400;
+      font-size: 12px;
+      position: absolute;
+      top: -20px;
+      left: 0;
+    }
+  }
+
+  &__top-input {
+    background-color: #fef7f0;
+    border: none;
+    outline-color: #234969;
+    height: 40px;
+    position: relative;
+    color: #234969;
+    @extend %dmsans-500;
+    font-size: 14px;
+    padding: 5px 15px 5px 5px;
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    &::placeholder {
+      @extend %dmsans-400;
+      font-size: 12px;
+    }
+  }
+
+  &__top-btn {
+    height: 40px;
+    background-color: $a3;
+    border: none;
+    padding: 5px 20px;
+    color: #fff;
+    @extend %dmsans-400;
+    outline-color: #234969;
+    font-size: 12px;
+    transition: all .3s;
+    &:hover {
+    transform: scale(1.1);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+    color: #dae4e9;
+    padding: 35px 0 17px;
+  }
+
+  &__bottom-copy {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: $footer-color;
+  }
+
+  &__bottom-menu-list {
+    display: flex;
+  }
+
+  &__bottom-link {
+    font-size: 14px;
+    color: $footer-color;
+    @extend %rubik-400;
+    margin-right: 15px;
+
+    &:hover {
+      @extend %rubik-500;
+    }
+  }
+
+  &__bottom-item {
+    &+& {
+      border-left: 1px solid $footer-color;
+      padding-left: 15px;
+    }
+  }
+}

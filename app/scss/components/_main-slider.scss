@@ -1,0 +1,93 @@
+.slider {
+  &__item {
+    height: 825px;
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__item-content {
+    padding-top: 210px;
+    padding-left: 295px;
+  }
+
+  &__item-title {
+    color: $title-color;
+    font-size: 72px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    max-width: 415px;
+  }
+
+  &__item-text {
+    color: #436372;
+    @extend %rubik-400;
+    font-size: 18px;
+    max-width: 400px;
+    display: block;
+    letter-spacing: 0.6px;
+  }
+
+  &__item-btn {
+    display: inline-block;
+    background-color: $a3;
+    font-size: 15px;
+    line-height: 1;
+    color: #fff;
+    margin-top: 40px;
+    padding: 20px 100px 20px 25px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s;
+    outline-color: #fff;
+
+    &::after {
+      content: url(../images/icons/arrow.svg);
+      position: absolute;
+      top: 20px;
+      right: 17px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__item-img {
+    padding-top: 275px;
+    padding-right: 290px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 75px;
+    right: 50%;
+
+    li {
+      padding: 0 5px;
+      font-size: 11px;
+      line-height: 1;
+      color: #243f4d;
+
+      button {
+        border-radius: 50%;
+        border: none;
+        background-color: #fde3cc;
+        opacity: 0.302;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

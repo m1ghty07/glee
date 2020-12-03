@@ -1,0 +1,140 @@
+.header {
+  padding: 50px 0 55px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    margin-right: 15px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    &+& {
+      margin-left: 35px;
+    }
+  }
+
+  &__link {
+    color: $header-color;
+    font-size: 15px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: $header-color;
+      transition: width .3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      transition: width .3s;
+    }
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    &--search {
+      background-color: #edf1f4;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 21px;
+      padding: 17px 17px;
+      border: none;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+
+    &--heart {
+      margin-right: 61px;
+      position: relative;
+    }
+
+    &--basket {
+      position: relative;
+    }
+
+    &--menu {
+      background-color: $a3;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      padding: 13px 0;
+      border: none;
+      cursor: pointer;
+      transition: all .3s;
+
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  &__bar {
+    background-color: #fcd7b6;
+    height: 50px;
+    width: 170px;
+    border-radius: 50px 50px;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: #fde7d3;
+      width: 1px;
+      height: 32px;
+      position: absolute;
+      top: 9px;
+      left: 85px;
+    }
+  }
+
+  &__num {
+    position: absolute;
+    top: -7px;
+    left: 12px;
+    background-color: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    text-align: center;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 1.5;
+    color: $header-color;
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+}
