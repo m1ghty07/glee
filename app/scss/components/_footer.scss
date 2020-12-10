@@ -23,6 +23,12 @@
     line-height: 1.6;
     font-style: normal;
     margin-bottom: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      text-shadow: 1px 1px 2px black,
+        0 0 1em rgb(160, 158, 158);
+    }
   }
 
   &__top-item {
@@ -43,9 +49,11 @@
     @extend %rubik-400;
     line-height: 1;
     color: $footer-color;
+    transition: all 0.3s;
 
     &:hover {
-      @extend %rubik-500;
+      text-shadow: 1px 1px 2px black,
+        0 0 1em rgb(160, 158, 158);
     }
   }
 
@@ -60,10 +68,11 @@
   &__top-form {
     display: flex;
     position: relative;
+
     label {
       color: #234969;
       @extend %dmsans-400;
-      font-size: 12px;
+      font-size: 0;
       position: absolute;
       top: -20px;
       left: 0;
@@ -80,6 +89,7 @@
     @extend %dmsans-500;
     font-size: 14px;
     padding: 5px 15px 5px 5px;
+
     &:focus {
       transform: scale(1.1);
     }
@@ -99,9 +109,10 @@
     @extend %dmsans-400;
     outline-color: #234969;
     font-size: 12px;
-    transition: all .3s;
+    transition: transform 0.3s;
+
     &:hover {
-    transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
 
@@ -128,9 +139,11 @@
     color: $footer-color;
     @extend %rubik-400;
     margin-right: 15px;
+    transition: all 0.3s;
 
     &:hover {
-      @extend %rubik-500;
+      text-shadow: 1px 1px 2px black,
+        0 0 1em rgb(160, 158, 158);
     }
   }
 

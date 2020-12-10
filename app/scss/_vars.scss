@@ -2,7 +2,10 @@ $header-color:#436372;
 $footer-color:#7b7b7b;
 $title-color: #243f4d;
 $a3:#a3bbc8;
-
+$news: #262626;
+$prod: #191919;
+$fc:#fcd7b6;
+$bar: #fcd7b6;
 
 
 
@@ -31,4 +34,12 @@ $a3:#a3bbc8;
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

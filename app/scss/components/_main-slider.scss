@@ -1,34 +1,34 @@
-.slider {
+.main-slider {
   &__item {
+    background-color: $fc;
     height: 825px;
     display: flex !important;
     justify-content: space-between;
   }
 
-  &__item-content {
+  &__content {
     padding-top: 210px;
     padding-left: 295px;
   }
 
-  &__item-title {
+  &__title {
     color: $title-color;
     font-size: 72px;
     line-height: 1;
     text-transform: uppercase;
-    margin-bottom: 40px;
     max-width: 415px;
   }
 
-  &__item-text {
-    color: #436372;
+  &__text {
+    margin-top: 40px;
+    color: $header-color;
     @extend %rubik-400;
     font-size: 18px;
     max-width: 400px;
     display: block;
-    letter-spacing: 0.6px;
   }
 
-  &__item-btn {
+  &__btn {
     display: inline-block;
     background-color: $a3;
     font-size: 15px;
@@ -39,7 +39,7 @@
     border: none;
     cursor: pointer;
     position: relative;
-    transition: all .3s;
+    transition: transform .3s;
     outline-color: #fff;
 
     &::after {
@@ -54,11 +54,29 @@
     }
   }
 
+  &__images {
+    position: relative;
 
-  &__item-img {
+    &::after {
+      content: "";
+      border-radius: 50%;
+      background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0.595) 31.64%, rgba(255, 255, 255, 0.223) 74.35%, rgba(255, 255, 255, 0) 99.87%);
+      position: absolute;
+      width: 634px;
+      height: 634px;
+      top: 80px;
+      left: 100px;
+    }
+  }
+
+
+  &__img {
     padding-top: 275px;
     padding-right: 290px;
+    position: relative;
+    z-index: 999;
   }
+
 
   .slick-dots {
     display: flex;
@@ -77,10 +95,16 @@
         border-radius: 50%;
         border: none;
         background-color: #fde3cc;
-        opacity: 0.302;
         width: 30px;
         height: 30px;
         padding: 0;
+        cursor: pointer;
+        outline: none;
+        transition: transform 0.5s;
+
+        &:hover {
+          transform: scale(1.3);
+        }
       }
 
       &.slick-active {
