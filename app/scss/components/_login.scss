@@ -1,0 +1,61 @@
+.modal {
+  padding-top: 110px;
+  max-width: 470px;
+  margin: 0 auto 110px;
+
+  &__label {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #f6f6f6;
+    padding: 15px;
+  }
+
+  &__btn {
+    background-color: rgb(163, 187, 200);
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #fffefe;
+    margin-bottom: 27px;
+    cursor: pointer;
+
+    &--create {
+      background-color: #fff;
+      border: 2px solid #a3bbc8;
+      color: #243f4d;
+      @extend %rubik-500;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  &__box {
+    border-bottom: 1px solid #f6f6f6;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__forgot {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+
+  &__register {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}

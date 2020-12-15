@@ -12,3 +12,51 @@
 @import 'main-page/design';
 @import 'main-page/main-popup';
 @import 'main-page/news';
+@import 'components/login';
+@import 'components/register';
+
+
+.top {
+  &__wrapper {
+    background-color: #edf1f4;
+    max-width: 100%;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    @extend %rubik-400;
+    font-size: 36px;
+    color: #222933;
+  }
+}
+.breadcrumbs {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    @extend %rubik-500;
+    font-size: 14px;
+    color: #737980;
+    padding-right: 20px;
+    position: relative;
+    &::after {
+      content: '/';
+      top: 0;
+      right: 7px;
+      position: absolute;  
+    }
+    &:last-child {
+      color: $title-color;
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
