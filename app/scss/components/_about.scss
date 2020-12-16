@@ -1,0 +1,244 @@
+.about {
+  padding: 120px 0;
+
+  &__top {
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: left center;
+  }
+
+  &__content {
+    max-width: 560px;
+    margin-left: auto;
+    padding: 80px 0;
+  }
+
+  &__experience {
+    display: flex;
+
+    & span {
+      @extend %rubik-500;
+      font-size: 140px;
+      color: #a3bbc8;
+      margin-right: 20px;
+    }
+
+    & p {
+      @extend %rubik-400;
+      font-size: 16px;
+      color: #243f4d;
+      max-width: 85px;
+      margin-top: 55px;
+      line-height: 2;
+    }
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #243f4d;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 65px;
+    line-height: 2;
+  }
+
+  &__top-numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__numbers-item {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #243f4d;
+    line-height: 30px;
+    position: relative;
+    padding-left: 60px;
+
+    &--projects::before {
+      content: '';
+      background-image: url(../images/about/1.svg);
+      background-repeat: no-repeat;
+      top: 10px;
+      left: 0;
+      width: 36px;
+      height: 38px;
+      position: absolute;
+    }
+
+    &--revenue::before {
+      content: '';
+      background-image: url(../images/about/2.svg);
+      background-repeat: no-repeat;
+      top: 10px;
+      left: 0;
+      width: 50px;
+      height: 45px;
+      position: absolute;
+    }
+
+    &--awards::before {
+      content: '';
+      background-image: url(../images/about/3.svg);
+      background-repeat: no-repeat;
+      top: 10px;
+      left: 0;
+      width: 40px;
+      height: 45px;
+      position: absolute;
+    }
+
+    & span {
+      @extend %dmsans-700;
+      font-size: 16px;
+      color: #4c4c4c;
+      text-align: center;
+      padding-left: 5px;
+    }
+  }
+
+  &__statistic {
+    display: flex;
+    justify-content: center;
+    background-color: $fc;
+    padding: 80px 0;
+    margin-bottom: 120px;
+  }
+
+  &__statistic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #243f4d;
+    position: relative;
+    &+& {
+      margin-left: 145px;
+    }
+    &::after {
+      content: '';
+      border-radius: 50%;
+      background-color: rgb(163, 187, 200);
+      opacity: 0.5;
+      position: absolute;
+      left: 93px;
+      top: 30px;
+      width: 35px;
+      height: 35px;
+    }
+    &:last-child {
+      &::after {
+        left: 68px;
+      }
+    }
+  }
+  &__statistic-item span {
+    font-size: 18px;
+  }
+}
+
+.team {
+  margin-bottom: 100px;
+  &__inner {
+    display: flex;
+  }
+  &__description {
+    max-width: 320px;
+  }
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #243f4d;
+    margin-bottom: 35px;
+  }
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+  &__button {
+    border-radius: 5px;
+    background-color: rgb(163, 187, 200);
+    border: none;
+    position: relative;
+    padding: 18px 55px 18px 15px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    &::after {
+      content: '';
+      background-image: url(../images/icons/arrow-about.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 40%;
+      right: 0;
+      width: 30px;
+      height: 10px;
+    }
+  }
+  &__members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
+    grid-column-gap: 30px;
+  }
+  &__item {
+    position: relative;
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 315px;
+  } 
+  &__info {
+    bottom: -60px;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 325px;
+  }
+  &__name {
+    max-width: 135px;
+    @extend %dmsans-700;
+    font-size: 22px;
+    color: #243f4d;
+    margin-left: 24px;
+  }
+  &__name span {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #565872;
+  }
+  &__links {
+    display: flex;
+    margin-right: 23px;
+  }
+  &__links-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #f6f6f6;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   &+& {
+     margin-left: 10px;
+   }
+  }
+}
+
+
+
+
+
