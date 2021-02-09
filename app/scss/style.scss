@@ -6,16 +6,19 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/main-slider';
+@import 'components/product-card';
+@import 'components/pagination';
 @import 'components/service';
 @import 'main-page/products';
 @import 'main-page/lamps';
 @import 'main-page/design';
 @import 'main-page/main-popup';
 @import 'main-page/news';
-@import 'components/login';
-@import 'components/register';
-@import 'components/terms';
-@import 'components/about';
+@import 'pages/login';
+@import 'pages/register';
+@import 'pages/terms';
+@import 'pages/about';
+@import 'pages/shop';
 
 
 .top {

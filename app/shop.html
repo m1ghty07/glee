@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee.</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="header__wrapper">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/icons/logo.png" alt="logo">
+        </a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="user">
+          <button class="user__link user__link--search" type="button">
+            Search
+            <svg class="user__image" width="15" height="15">
+              <use xlink:href="images/sprites.svg#icon"></use>
+            </svg>
+          </button>
+          <div class="user__bar">
+            <a class="user__link user__link--heart" href="#">
+              Favorite
+              <svg class="user__image" width="20" height="20">
+                <use xlink:href="images/sprites.svg#heart"></use>
+              </svg>
+              <span class="user__num">0</span>
+            </a>
+            <a class="user__link user__link--basket" href="#">
+              Cart
+              <svg class="user__image" width="20" height="20">
+                <use xlink:href="images/sprites.svg#basket"></use>
+              </svg>
+              <span class="user__num">0</span>
+            </a>
+          </div>
+          <button class="user__link user__link--menu" type="button">
+            Menu
+            <svg class="user__image" width="20" height="20">
+              <use xlink:href="images/sprites.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <section class="top">
+      <div class="top__wrapper">
+        <h2 class="top__title">
+          Product list 1
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Product list 1
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="shop">
+      <div class="container container--small">
+        <div class="shop__inner">
+          <div class="shop__filters filter">
+
+
+            <div class="filter__item filter-category">
+              <p class="filter__title filter__title-category">
+                Category
+              </p>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Chair</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Table</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Lamp</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Watch</span>
+                    <span>></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Clock</span>
+                    <span>></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+
+
+            <div class="filter-price filter__item">
+              <p class="filter__title filter__title-price">Price</p>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text">
+              </form>
+            </div>
+
+            <div class="filter__item filter-brand">
+              <p class="filter__title filter__title-brand">
+                Brand
+              </p>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p>RFL</p>
+                    <span>(10)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p>Brothers</p>
+                    <span>(21)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p>Regal</p>
+                    <span>(3)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p>Nadia</p>
+                    <span>(14)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p>Otobi</p>
+                    <span>(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-products filter__item">
+              <p class="filter__title filter__title-products">Recent products</p>
+                <div class="filter-products__list">
+                  <div class="filter-products__item">
+                    <div class="filter-products__img-box">
+                      <img class="filter-products__img" src="images/shop/lamp1.jpg" alt="">
+                    </div>
+                    <div class="filter-products__info">
+                      <a class="filter-products__name" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="4"></div>
+                      <span class="filter-products__price">23$</span>
+                    </div>
+                  </div>
+                  <div class="filter-products__item">
+                    <div class="filter-products__img-box">
+                       <img class="filter-products__img" src="images/shop/lamp2.png" alt="">
+                    </div>
+                    <div class="filter-products__info">
+                      <a class="filter-products__name" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="4"></div>
+                      <span class="filter-products__price">23$</span>
+                    </div>
+                  </div>
+                  <div class="filter-products__item">
+                    <div class="filter-products__img-box">
+                      <img class="filter-products__img" src="images/shop/lamp3.png" alt="">
+                    </div> 
+                    <div class="filter-products__info">
+                      <a class="filter-products__name" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="4"></div>
+                      <span class="filter-products__price">23$</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <div class="shop__content">
+            <div class="shop__content-items">
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+              <article class="product-card" href="#">
+                <img class="product-card__img" src="images/content/products/parf.png" alt="product content">
+                <div class="product-card__links">
+                  <a class="product-card__link" href="#">
+                    Search
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#icon2"></use>
+                    </svg>
+                  </a>
+                  <button class="product-card__link" type="button">
+                    Cart
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#basket2"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__link" type="button">
+                    Favorite
+                    <svg class="user__image" width="20" height="20">
+                      <use xlink:href="images/sprites.svg#heart2"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product-card__name">Paropamiso</h3>
+                <p class="product-card__price">$<span>129.00</span> </p>
+              </article>
+            </div>
+            <div class="pagination">
+              <a class="pagination__prev" href="#">Previous</a>
+
+              <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+              </ul>
+
+              <a class="pagination__next" href="#">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    
+
+
+
+    <div class="partners">
+      <ul class="partners__items">
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/content/partners/partner-1.png" alt="partner logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/content/partners/partner-2.png" alt="partner logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/content/partners/partner-3.png" alt="partner logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/content/partners/partner-4.png" alt="partner logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/content/partners/partner-5.png" alt="partner logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="container container--small">
+      <div class="footer__top">
+        <div class="footer__top-connection footer__top-connection-address">
+          <a class="logo footer__logo" href="#">
+            <img class="logo__img" src="images/icons/logo.png" alt="logo">
+          </a>
+          <address class="footer__top-address">
+            <a class="footer__top-connection" href="#">
+              <p>ADDRESS: 4772 Wines Lane
+                Houston, TX 77032
+              </p>
+            </a>
+            <a class="footer__top-connection" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+            <a class="footer__top-connection" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
+          </address>
+        </div>
+        <div class="footer__top-items">
+          <div class="footer__top-title">
+            Services
+          </div>
+          <ul class="footer__top-list">
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">About us</a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Return Policy</a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Our Blog</a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Contact Us</a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top-items">
+          <div class="footer__top-title">
+            Account
+          </div>
+          <ul class="footer__top-list">
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Your Account
+              </a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Checkout</a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Login</a>
+            </li>
+            <li class="footer__top-item">
+              <a class="footer__top-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top-items">
+          <div class="footer__top-title">
+            newsletter
+          </div>
+          <p class="footer__top-info">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+          <form class="footer__top-form" action="#">
+            <label for="input">Enter your email:</label>
+            <input class="footer__top-input" type="email" id="input" name="subscribe[email]"
+              placeholder="Email address">
+            <button class="footer__top-btn type=" submit" ">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class=" footer__bottom">
+              <p class="footer__bottom-copy">
+                ©2020 CopyRight Example. All rights reserved.
+              </p>
+              <div class="footer__bottom-menu">
+                <ul class="footer__bottom-menu-list">
+                  <li class="footer__bottom-item">
+                    <a class="footer__bottom-link" href="#">Home</a>
+                  </li>
+                  <li class="footer__bottom-item">
+                    <a class="footer__bottom-link" href="#">About</a>
+                  </li>
+                  <li class="footer__bottom-item">
+                    <a class="footer__bottom-link" href="#">Blog</a>
+                  </li>
+                  <li class="footer__bottom-item">
+                    <a class="footer__bottom-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </div>
+  </footer>
+
+
+  <script src="js/main.min.js"> </script>
+</body>
+
+</html>
